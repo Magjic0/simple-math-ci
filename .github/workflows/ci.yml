@@ -15,3 +15,13 @@ jobs:
           python-version: '3.11'
       - run: pip install .
       - run: python -m unittest test_simple_math.py -v
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pylint
+      - run: pylint simple_math.py --fail-under=8

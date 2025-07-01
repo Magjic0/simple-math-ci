@@ -1,14 +1,14 @@
+"""Module simple_math fournissant des opérations arithmétiques simples."""
+
 class SimpleMath:
-    """Opérations arithmétiques simples."""
+    """Opérations arithmétiques de base."""
 
     @staticmethod
-    def addition(a: float, b: float) -> float:
-        return a + b
+    def addition(operand1: float, operand2: float) -> float:
+        """Retourne la somme de deux nombres."""
+        return operand1 + operand2
 
     @staticmethod
-    def subtraction(a: float, b: float) -> float:
-        return a - b
-
-    @staticmethod
-    def subtraction(a: float, b: float) -> float:
-        return a - b
+    def subtraction(operand1: float, operand2: float) -> float:
+        """Retourne la différence de deux nombres."""
+        return operand1 - operand2
