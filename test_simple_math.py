@@ -7,3 +7,6 @@ class TestSimpleMath(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+    def test_subtraction(self):
+        self.assertEqual(SimpleMath.subtraction(5, 3), 2)
